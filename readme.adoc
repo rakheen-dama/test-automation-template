@@ -1,3 +1,4 @@
-*Test automation templates for ui and api*:
+= *Test automation templates for ui and api*:
 
-Based
+Based on : https://www.udemy.com/course/build-a-cucumber-playwright-typescript-automation-framework[Udemy course by Cameron Bradley]
+
