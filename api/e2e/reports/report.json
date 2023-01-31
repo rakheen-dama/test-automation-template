@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 30177916
+              "duration": 18018167
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73523125
+              "duration": 61159708
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 841000
+              "duration": 761499
             }
           },
           {
@@ -53,7 +53,37 @@
             },
             "result": {
               "status": "passed",
-              "duration": 208291
+              "duration": 270833
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "id",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "userId",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the response json contains the attributes:",
+            "match": {
+              "location": "src/step-definitions/assertions/response-steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1155125
             }
           }
         ],

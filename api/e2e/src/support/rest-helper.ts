@@ -9,7 +9,8 @@ export const getResponse = async (
     globalAPIResponseVariables: GlobalAPIResponseVariables
 ): Promise<APIResponse> => {
     const url = retrieveHostURL(globalConfig);
-    const response = await request.get(`${url.href}${route}`);
+    console.log(`url: ${url.href+route}`);
+    const response = await request.get(url.href+route)
     globalAPIResponseVariables.response = response;
     return response;
 }
