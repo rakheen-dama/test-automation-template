@@ -6,9 +6,12 @@ Object.defineProperty(exports, "__esModule", {
 exports.smoke = exports.regression = exports.dev = void 0;
 var common = './src/features/**/*.feature \
     --require-module ts-node/register \
-    --require ./src/step_definitions/**/**/*.ts \
+    --require ./src/step-definitions/**/*.ts \
     -f json:./reports/report.json \
     --format progress-bar';
+
+//cucumber-js src/features/**/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts
+
 var dev = "".concat(common, " --tags '@dev'");
 exports.dev = dev;
 var smoke = "".concat(common, " --tags '@smoke'");

@@ -10,13 +10,24 @@
         "name": "As an API I can retrieve all the posts",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19687624
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
             "name": "I retrieve \"posts\"",
+            "match": {
+              "location": "src/step-definitions/get-steps.ts:4"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 75608541
             }
           },
           {
@@ -24,9 +35,12 @@
             "keyword": "And ",
             "line": 6,
             "name": "the response was successful",
+            "match": {
+              "location": "src/step-definitions/assertions/response-steps.ts:5"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 843000
             }
           }
         ],

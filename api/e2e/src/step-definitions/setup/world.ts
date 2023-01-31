@@ -43,6 +43,9 @@ export class ScenarioWorld extends World {
     private extractToken = async (response: any) => {
         return response.token.toString();
     }
+
 }
+
+
 
 setWorldConstructor(ScenarioWorld);
