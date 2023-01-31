@@ -4,50 +4,63 @@
     "elements": [
       {
         "description": "",
-        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-can-retrieve-all-the-posts",
+        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-can-retrieve-a-specific-post",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "As an API I can retrieve all the posts",
+        "line": 11,
+        "name": "As an API I can retrieve a specific post",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 19687624
+              "duration": 30177916
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "I retrieve \"posts\"",
+            "line": 12,
+            "name": "I retrieve the 1st \"posts\"",
             "match": {
-              "location": "src/step-definitions/get-steps.ts:4"
+              "location": "src/step-definitions/get-steps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 75608541
+              "duration": 73523125
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
+            "line": 13,
             "name": "the response was successful",
             "match": {
               "location": "src/step-definitions/assertions/response-steps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 843000
+              "duration": 841000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the response status code is 200",
+            "match": {
+              "location": "src/step-definitions/assertions/response-steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 208291
             }
           }
         ],
         "tags": [
           {
             "name": "@dev",
-            "line": 3
+            "line": 10
           }
         ],
         "type": "scenario"
