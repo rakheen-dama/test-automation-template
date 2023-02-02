@@ -24,7 +24,7 @@ Then(
 
 Then(
     /^the response status code is (\d*)$/,
-    async function(this: ScenarioWorld, statusCode: Number) {
+    async function(this: ScenarioWorld, statusCode: number) {
         const {
             globalAPIResponseVariables
         } = this;

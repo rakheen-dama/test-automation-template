@@ -7,9 +7,9 @@
     "lint": "eslint . --ext .ts",
     "test": "npx playwright test --reporter=html",
     "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
-    "precucumber": "rm -Rf reports && mkdir reports && echo {} > reports/reports.json",
+    "precucumber": "rm -Rf reports && mkdir reports && echo {} > reports/report.json",
     "cucumber": "npm run transpile && cucumber-js",
-    "cucumber-old": "cucumber-js src/features/**/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts"
+    "postcucumber": "ts-node ./src/reporter/cucumber-reports.ts"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "@playwright/test": "^1.30.0",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
+    "cucumber-html-reporter": "^5.5.0",
     "dotenv": "^16.0.3",
     "eslint": "^8.33.0",
     "playwright": "^1.30.0",
